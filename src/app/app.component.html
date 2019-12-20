@@ -1,0 +1,96 @@
+<div id="parentContainer">
+    <table>
+        <tr>
+            <th colspan="2">
+                {{title}}
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Confusion
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="option1" (change)="toggleDiagnoses(option1)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BUN > 19 mg/dL (> 7 mmol/L)
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="option2" (change)="toggleDiagnoses(option2)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Respiratory Rate ≥ 30
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="option3" (change)="toggleDiagnoses(option3)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="option4" (change)="toggleDiagnoses(option4)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Age ≥ 65
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="option5" (change)="toggleDiagnoses(option5)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <div id="diagnosesContainer">
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 0}">
+            <strong>0 points</strong>
+            <p>Low risk group: 0.6% 30-day mortality.</p>
+            <p>Consider outpatient treatment.</p>
+        </div>
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 1}">
+            <strong>1 points</strong>
+            <p>Low risk group: 2.7% 30-day mortality.</p>
+            <p>Consider outpatient treatment.</p>
+        </div>
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 2}">
+            <strong>2 points</strong>
+            <p>Moderate risk group: 6.8% 30-day mortality.</p>
+            <p>Consider inpatient treatment or outpatient with close followup..</p>
+        </div>
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 3}">
+            <strong>3 points</strong>
+            <p>Severe risk group: 14.0% 30-day mortality.</p>
+            <p>Consider inpatient treatment with possible intensive care admission.</p>
+        </div>
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 4}">
+            <strong>4 points</strong>
+            <p>Highest risk group: 27.8% 30-day mortality.</p>
+            <p>Consider inpatient treatment with possible intensive care admission.</p>
+        </div>
+        <div class="diagnoses" [ngClass]="{'active':diadnosesCount === 5}">
+            <strong>5 points</strong>
+            <p>Highest risk group: 27.8% 30-day mortality.</p>
+            <p>Consider inpatient treatment with possible intensive care admission</p>
+        </div>
+    </div>
+</div>
