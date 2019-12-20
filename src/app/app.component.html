@@ -6,56 +6,59 @@
             </th>
         </tr>
         <tr>
-            <td>
-                Confusion
+            <td i18n="Option|First diagnoses option@@First Option">
+                optionOne
             </td>
             <td>
                 <label class="switch">
-                    <input type="checkbox" [(ngModel)]="option1" (change)="toggleDiagnoses(option1)">
+                    <input type="checkbox" [(ngModel)]="options.option1" (change)="toggleDiagnoses(options.option1)">
                     <span class="slider round"></span>
                 </label>
             </td>
         </tr>
         <tr>
-            <td>
-                BUN > 19 mg/dL (> 7 mmol/L)
+            <td i18n="Option|Second diagnoses option@@Second Option">
+                optionTwo
             </td>
             <td>
                 <label class="switch">
-                    <input type="checkbox" [(ngModel)]="option2" (change)="toggleDiagnoses(option2)">
+                    <input type="checkbox" [(ngModel)]="options.option2" (change)="toggleDiagnoses(options.option2)">
                     <span class="slider round"></span>
                 </label>
             </td>
         </tr>
         <tr>
-            <td>
+            <td i18n="Option|Third diagnoses option@@Third Option">
                 Respiratory Rate ≥ 30
+                optionThree
             </td>
             <td>
                 <label class="switch">
-                    <input type="checkbox" [(ngModel)]="option3" (change)="toggleDiagnoses(option3)">
+                    <input type="checkbox" [(ngModel)]="options.option3" (change)="toggleDiagnoses(options.option3)">
                     <span class="slider round"></span>
                 </label>
             </td>
         </tr>
         <tr>
-            <td>
+            <td i18n="Option|Fourth diagnoses option@@Fourth Option">
                 Systolic BP < 90 mmHg or Diastolic BP ≤ 60 mmHg
+                optionFour
             </td>
             <td>
                 <label class="switch">
-                    <input type="checkbox" [(ngModel)]="option4" (change)="toggleDiagnoses(option4)">
+                    <input type="checkbox" [(ngModel)]="options.option4" (change)="toggleDiagnoses(options.option4)">
                     <span class="slider round"></span>
                 </label>
             </td>
         </tr>
         <tr>
-            <td>
-                Age ≥ 65
+            <td i18n="Option|Fifth diagnoses option@@Fifth Option">
+                
+                optionFive
             </td>
             <td>
                 <label class="switch">
-                    <input type="checkbox" [(ngModel)]="option5" (change)="toggleDiagnoses(option5)">
+                    <input type="checkbox" [(ngModel)]="options.option5" (change)="toggleDiagnoses(options.option5)">
                     <span class="slider round"></span>
                 </label>
             </td>

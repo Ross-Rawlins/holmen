@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="ng2.template">
+        <body>
+            <trans-unit id="First Option" datatype="html">
+                <source>
+                    optionOne
+                </source>
+                <target>
+                    Confusion
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.html</context>
+                    <context context-type="linenumber">9</context>
+                </context-group>
+                <note priority="1" from="description">First diagnoses option</note>
+                <note priority="1" from="meaning">Option</note>
+            </trans-unit>
+            <trans-unit id="Second Option" datatype="html">
+                <source>
+                    optionTwo
+                </source>
+                <target>
+                    BUN &gt; 19 mg/dL (&gt; 7 mmol/L)
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.html</context>
+                    <context context-type="linenumber">20</context>
+                </context-group>
+                <note priority="1" from="description">Second diagnoses option</note>
+                <note priority="1" from="meaning">Option</note>
+            </trans-unit>
+            <trans-unit id="Third Option" datatype="html">
+                <source>
+                    optionThree
+                </source>
+                <target>
+                    Respiratory Rate ≥ 30
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.html</context>
+                    <context context-type="linenumber">31</context>
+                </context-group>
+                <note priority="1" from="description">Third diagnoses option</note>
+                <note priority="1" from="meaning">Option</note>
+            </trans-unit>
+            <trans-unit id="Fourth Option" datatype="html">
+                <source>
+                   optionFour
+                </source>
+                 <target>
+                    Systolic BP &lt; 90 mmHg or Diastolic BP ≤ 60 mmHg
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.html</context>
+                    <context context-type="linenumber">42</context>
+                </context-group>
+                <note priority="1" from="description">Fourth diagnoses option</note>
+                <note priority="1" from="meaning">Option</note>
+            </trans-unit>
+            <trans-unit id="Fifth Option" datatype="html">
+                <source>
+                    optionFive
+                </source>
+                <target>
+                    Age ≥ 65
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/app.component.html</context>
+                    <context context-type="linenumber">53</context>
+                </context-group>
+                <note priority="1" from="description">Fifth diagnoses option</note>
+                <note priority="1" from="meaning">Option</note>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

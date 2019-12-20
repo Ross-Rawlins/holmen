@@ -8,9 +8,17 @@ import { Component, } from '@angular/core';
 export class AppComponent {
   title = 'holmen';
   diadnosesCount:number
+  options:any
   
   ngOnInit()
   {
+      this.options = {
+          option1:false,
+          option2:false,
+          option3:false,
+          option4:false,
+          option5:false,
+      }
       this.diadnosesCount = 0;
   }
 
